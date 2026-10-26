@@ -1,0 +1,176 @@
+/* Savoria Fine Dining Theme */
+:root {
+  --primary-color: #1a1a1a;
+  --accent-color: #c79b55;
+  --bg-light: #eae6da;
+  --text-muted: #666666;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--primary-color);
+  background-color: #ffffff;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: var(--primary-color) !important;
+}
+
+.brand-dot { color: var(--accent-color); }
+
+.nav-link {
+  color: var(--primary-color) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--accent-color) !important;
+}
+
+.navbar-toggler { border-radius: 0; }
+.navbar-toggler:focus { box-shadow: 0 0 0 0.15rem rgba(199, 155, 85, 0.35); }
+
+.btn-savoria {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 0;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid var(--accent-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-savoria:hover {
+  background-color: #b08544;
+  border-color: #b08544;
+  color: #ffffff;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/photo1.png') center/cover no-repeat;
+  color: #ffffff;
+  padding: 160px 0;
+}
+
+.hero-content { max-width: 700px; }
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-space { padding: 80px 0; }
+.section-title { font-weight: 700; margin-bottom: 15px; }
+.section-warm { background: var(--bg-light); }
+
+.food-card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.food-card:hover { transform: translateY(-5px); }
+
+.food-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.food-card .card-body { padding: 25px; }
+
+.price {
+  font-weight: 700;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 10px;
+}
+
+.feature-box {
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  height: 100%;
+  border-top: 3px solid var(--accent-color);
+}
+
+.page-banner {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover { transform: scale(1.03); }
+
+.about-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.contact-section { background-color: #f9f8f6; }
+.accent-border { border-color: var(--accent-color) !important; }
+.contact-section a { color: inherit; text-decoration: none; }
+
+footer {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  padding: 60px 0 20px;
+}
+
+footer h2, footer h5 { color: #ffffff; }
+footer a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer a:hover { color: var(--accent-color); }
+footer hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 40px 0 20px;
+}
+
+@media (max-width: 767.98px) {
+  .hero { padding: 100px 0; }
+  .section-space { padding: 55px 0; }
+  .page-banner { padding: 60px 0; }
+  .about-image { height: 300px; }
+  .navbar-nav { padding: 10px 0; }
+  .navbar-nav .nav-item { margin-top: 3px; margin-bottom: 3px; }
+}
